@@ -32,10 +32,10 @@ WHERE
          mp:daerah ?daerah ;
            mp:jenis ?jenis ;
              mp:trend ?trend ;
-              FILTER contains(lcase(str(?item)), lcase(str("${value.item ? value.item : ''}")))
-              FILTER contains(lcase(str(?daerah)), lcase(str("${value.daerah ? value.daerah : ''}")))
-              FILTER contains(lcase(str(?jenis)), lcase(str("${value.jenis ? value.jenis : ''}")))
-              FILTER contains(lcase(str(?trend)), lcase(str("${value.trend ? value.trend : ''}")))
+              FILTER contains(lcase(str(?item)), lcase(str("${value.item}")))
+              FILTER contains(lcase(str(?daerah)), lcase(str("${value.daerah}")))
+              FILTER contains(lcase(str(?jenis)), lcase(str("${value.jenis}")))
+              FILTER contains(lcase(str(?trend)), lcase(str("${value.trend}")))
 }`
 };
 
@@ -71,10 +71,10 @@ const formatter = (mp, index) => {
   }
 }
 
-const handleChangeTitle = event => {
+const handleChangeItem = event => {
   setValue({
     ...value,
-    'judul': event.target.value,  
+    'item': event.target.value,  
   });
 }
 
@@ -85,24 +85,24 @@ const handleChangeNpm = event => {
   });
 }
 
-const handleChangeName = event => {
+const handleChangeDaerah = event => {
   setValue({
     ...value,
-    'nama': event.target.value,  
+    'daerah': event.target.value,  
   });
 }
 
-const handleChangeYear = event => {
+const handleChangeJenis = event => {
   setValue({
     ...value,
-    'tahun': event.target.value,
+    'jenis': event.target.value,
   });
 }
 
-const handleChangeMajor = event => {
+const handleChangeTrend = event => {
   setValue({
     ...value,
-    'peminatan': event.target.value,
+    'trend': event.target.value,
   });
 }
 
@@ -113,9 +113,12 @@ const content = value.mp.map((mp) =>
         <div className="item"><a href="Item">{mp.item}</a></div>
         <div class="row">
           <div class="col-md-5">
-            <a>Lokasi : {mp.daerah}</a>
+            <a>Jenis : {mp.jenis}</a>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-5">
+            <a>Lokasi : {mp.daerah}</a>  
+          </div>
+          <div class="col-md-5">
             <a>Trend : {mp.trend}</a>  
           </div>
         </div>  
@@ -162,7 +165,7 @@ return (
                   placeholder="Nama Makanan atau Minuman"
                   type="text"
                   id="titleBar"
-                  onChange={handleChangeTitle}
+                  onChange={handleChangeItem}
                 />
               </div>
             </div>
@@ -174,7 +177,7 @@ return (
                     placeholder="Lokasi Pencarian"
                     type="text"
                     id="nameBar"
-                    onChange={handleChangeName}
+                    onChange={handleChangeDaerah}
                   />
                 </div>
               </div>
@@ -183,7 +186,7 @@ return (
 
           {/* Filter Jenis */}
           <div className="row">
-            <select setValue={value.jenis} className="dropdown" id="tahun" onChange={handleChangeYear}>
+            <select setValue={value.jenis} className="dropdown" id="tahun" onChange={handleChangeJenis}>
               <option value="">Jenis</option>
               <option value="Makanan Berat">Makanan Berat</option>
               <option value="Makanan Ringan">Makanan Ringan</option>
@@ -193,7 +196,7 @@ return (
 
            {/* Filter Trend */}
            <div className="row">
-            <select setValue={value.trend} className="dropdown" id="trend" onChange={handleChangeYear}>
+            <select setValue={value.trend} className="dropdown" id="trend" onChange={handleChangeTrend}>
               <option value="">Trend</option>
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
