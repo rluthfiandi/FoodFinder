@@ -135,7 +135,7 @@ return (
     <body>
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Skripsi Finder</a>
+        <a className="navbar-brand" href="#">Food Finder</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
@@ -154,9 +154,9 @@ return (
 
       <div className="header">
         <h1>
-            Welcome to Skripsi Finder!
+            Food Finder
         </h1>
-        <p id="desc">Skripsi Finder adalah Website<b> Pencarian Skripsi </b>Mahasiswa Teknik Informatika Unpad</p>
+        <p id="desc">Food Finder adalah Website<b> Pencarian Makanan dan Minuman </b>Mahasiswa Teknik Informatika Unpad</p>
 
         {/* Search Form  */}
         <form>
@@ -199,22 +199,14 @@ return (
           {/* Filter Tahun */}
           <div className="row">
             <select setValue={value.tahun} className="dropdown" id="tahun" onChange={handleChangeYear}>
-              <option value="">Tahun</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
+              <option value="">Jenis</option>
+              <option value="2016">Makanan Berat</option>
+              <option value="2016">Makanan Ringan</option>
+              <option value="2016">Minuman </option>
             </select>
           </div>
 
           {/* Filter Peminatan */}
-          <div className="row">
-            <select setValue={value.peminatan} className="dropdown" id="peminatan" onChange={handleChangeMajor}>
-              <option value="">Bidang Minat</option>
-              <option value="Sistem Informasi">Sistem Informasi</option>
-              <option value="Jaringan Komputer">Jaringan Komputer</option>
-              <option value="Artificial Intelligence">Artificial Intelligence</option>
-            </select>
-          </div>
           <div className="row">
             <input
                 type="button"
@@ -230,7 +222,7 @@ return (
       {/* Hasil Pencarian */}
       <div class="result">
         <h5>
-            Hasil Pencarian Skripsi
+            Hasil Pencarian
         </h5>
         <div>
           {content}
@@ -239,7 +231,7 @@ return (
 
       {/* Footer */}
         <footer>
-          <div className="footer-copyright">&copy; 2020 Skripsi Finder</div>
+          <div className="footer-copyright">&copy; 2020 FoodFinder</div>
         </footer>
     </body>
     );

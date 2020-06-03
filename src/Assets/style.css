@@ -10,7 +10,7 @@
 .header {
   padding: 40px;
   text-align: center;
-  background: #1abc9c;
+  background: #DC143C;
   color: white;
 }
   
@@ -49,6 +49,7 @@ a#skripsi{
 }
 
 .result{
+  margin-left: 500px;
   color: grey;
 }
 
@@ -58,7 +59,7 @@ h5{
 }
 
 footer{
-  background-color: #1abc9c;
+  background-color: #DC143C;
   color: whitesmoke;
   padding: 20px;
   margin-top: 110px;
