@@ -23,21 +23,22 @@ export default function Homepage(){
 
   const queryData = {
     query:
-      `PREFIX mp: <http://www.foodfinder.org/ns/makanan#>
+    `PREFIX mp: <http://www.foodfinder.org/ns/makanan#>
 
-      SELECT ?item ?daerah ?jenis ?trend
-      WHERE
-      {
-       ?c   mp:item  ?item ;
-               mp:daerah ?daerah ;
-                 mp:jenis ?jenis ;
-                   mp:trend ?trend ;
-                    FILTER contains(lcase(str(?item)), lcase(str("${value.item ? value.item : ''}")))
-                    FILTER contains(lcase(str(?daerah)), lcase(str("${value.daerah ? value.daerah : ''}")))
-                    FILTER contains(lcase(str(?jenis)), lcase(str("${value.jenis ? value.jenis : ''}")))
-                    FILTER contains(lcase(str(?trend)), lcase(str("${value.trend ? value.trend : ''}")))
-      }`
-  };
+SELECT ?item ?daerah ?jenis ?trend
+WHERE
+{
+ ?c   mp:item  ?item ;
+         mp:daerah ?daerah ;
+           mp:jenis ?jenis ;
+             mp:trend ?trend ;
+              FILTER contains(lcase(str(?item)), lcase(str("${value.item ? value.item : ''}")))
+              FILTER contains(lcase(str(?daerah)), lcase(str("${value.daerah ? value.daerah : ''}")))
+              FILTER contains(lcase(str(?jenis)), lcase(str("${value.jenis ? value.jenis : ''}")))
+              FILTER contains(lcase(str(?trend)), lcase(str("${value.trend ? value.trend : ''}")))
+}`
+};
+
 
   try {
     const { data } = await axios(BASE_URL, {
@@ -48,12 +49,12 @@ export default function Homepage(){
     console.log(data);
 
     // Convert Data
-    const formatted_data = data.results.bindings.map((skripsi, index) => formatter(skripsi, index));
+    const formatted_data = data.results.bindings.map((mp, index) => formatter(mp, index));
     console.log(formatted_data)
 
     setValue({
       ...value,
-      skripsis: formatted_data
+      mp: formatted_data
     });
   } catch (err) {
     console.error(err);
@@ -112,10 +113,10 @@ const content = value.mp.map((mp) =>
         <div className="item"><a href="Item">{mp.item}</a></div>
         <div class="row">
           <div class="col-md-5">
-            {mp.daerah}
+            <a>Lokasi : {mp.daerah}</a>
           </div>
           <div class="col-md-2">
-            {mp.trend}  
+            <a>Trend : {mp.trend}</a>  
           </div>
         </div>  
       </div>
