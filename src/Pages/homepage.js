@@ -6,12 +6,11 @@ import qs from 'qs';
 export default function Homepage(){
   
   const [value, setValue] = useState({
-    skripsis: [],
-    judul: '',
-    nama:'',
-    npm :'',
-    peminatan :'',
-    tahun :''
+    mp : [],
+    item : '',
+    daerah: '',
+    jenis:'',
+    trend :''
   });
 
   const getData = async () => {
@@ -106,23 +105,17 @@ const handleChangeMajor = event => {
   });
 }
 
-const content = value.skripsis.map((skripsi) =>
+const content = value.mp.map((mp) =>
   <div className="container">
-    <div key={skripsi.id}>
+    <div key={mp.id}>
       <div className="col-md-10">
-        <div className="judul"><a href="Skripsi">{skripsi.judul}</a></div>
+        <div className="item"><a href="Item">{mp.item}</a></div>
         <div class="row">
           <div class="col-md-5">
-            {skripsi.nama}
+            {mp.daerah}
           </div>
           <div class="col-md-2">
-            {skripsi.npm}  
-          </div>
-          <div class="col-md-2">
-            {skripsi.peminatan}
-          </div>
-          <div class="col-md-2">
-            {skripsi.tahun}
+            {mp.trend}  
           </div>
         </div>  
       </div>
@@ -164,8 +157,8 @@ return (
             <div className="row">
               <div className="col">
                 <input
-                  setValue={value.judul}
-                  placeholder="Judul Skripsi"
+                  setValue={value.item}
+                  placeholder="Nama Makanan atau Minuman"
                   type="text"
                   id="titleBar"
                   onChange={handleChangeTitle}
@@ -176,37 +169,38 @@ return (
               <div className="row">
                 <div className="col">
                   <input
-                    setValue={value.nama}
-                    placeholder="Penulis"
+                    setValue={value.daerah}
+                    placeholder="Lokasi Pencarian"
                     type="text"
                     id="nameBar"
                     onChange={handleChangeName}
-                  />
-                </div>
-                <div className="col" id="studID">
-                  <input
-                    setValue={value.npm}
-                    placeholder="NPM Penulis"
-                    type="text"
-                    id="npmBar"
-                    onChange={handleChangeNpm}
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Filter Tahun */}
+          {/* Filter Jenis */}
           <div className="row">
-            <select setValue={value.tahun} className="dropdown" id="tahun" onChange={handleChangeYear}>
+            <select setValue={value.jenis} className="dropdown" id="tahun" onChange={handleChangeYear}>
               <option value="">Jenis</option>
-              <option value="2016">Makanan Berat</option>
-              <option value="2016">Makanan Ringan</option>
-              <option value="2016">Minuman </option>
+              <option value="Makanan Berat">Makanan Berat</option>
+              <option value="Makanan Ringan">Makanan Ringan</option>
+              <option value="Minuman">Minuman </option>
             </select>
           </div>
 
-          {/* Filter Peminatan */}
+           {/* Filter Trend */}
+           <div className="row">
+            <select setValue={value.trend} className="dropdown" id="trend" onChange={handleChangeYear}>
+              <option value="">Trend</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+
+          {/* Button */}
           <div className="row">
             <input
                 type="button"
