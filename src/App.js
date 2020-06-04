@@ -9,7 +9,7 @@ import { MDBCol, MDBFormInline, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Homepage from "./Pages/homepage";
-import Skripsi from "./Pages/skripsi";
+import About from "./Pages/about";
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Router>
         <Route exact path="/" component={Homepage}></Route>
-        <Route exact path="/Skripsi" component={Skripsi}></Route>
+        <Route exact path="/About" component={About}></Route>
       </Router>
     </div>
   );
