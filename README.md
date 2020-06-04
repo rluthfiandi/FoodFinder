@@ -1,4 +1,4 @@
-# Skripsi Finder
+# Food Finder
 
 Skripsi Finder is a semantic web to help you search the thesis of computer science student in Unpad. The project is built in React JavaScript Framework that used RDF as its database and Apache Jena Fuseki as its database server. 
 
