@@ -39,13 +39,11 @@ Persistent
 .\SkripsiFinder\src\Database
 `
 ## Features
-- Find thesis by title
-- Find thesis by student ID
-- Find thesis by author
-- Find thesis by specific field of study
-- Find thesis by year
+- Find merchant by Location
+- Find merchant by Type
+
 
 ## Group
-- Faradilla A - 140810170001
-- Rividya Permata A - 140810170047
-- Cryssa Aprilia E P - 140810170063
+- Rizal Faturrahman - 140810170009
+- Raihan Luthfiandi Muhammad - 140810170029
+- Haris Putratama - 1408101700599
