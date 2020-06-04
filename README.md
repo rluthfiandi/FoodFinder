@@ -6,7 +6,7 @@
 - Download NodeJs (https://nodejs.org/en/)
 - Clone this project by typing 
 `
-$ git clone https://github.com/fardil/SkripsiFinder.git
+$ git clone https://github.com/rluthfiandi/FoodFinder.git
 ` in command prompt 
 - Type 
 `
@@ -27,14 +27,12 @@ http://localhost:3030
 Manage Dataset
 ` in Apache Jena Fuseki
 - Set `
-skripsi-finder
+food-finder
 ` as its dataset name
 - Choose `
 Persistent
 ` as its dataset type
-- Upload dataset `dataskripsi
-`that is located in `
-.\SkripsiFinder\src\Database
+
 `
 ## Features
 - Find merchant by Location
