@@ -46,4 +46,4 @@ Persistent
 ## Group
 - Rizal Faturrahman - 140810170009
 - Raihan Luthfiandi Muhammad - 140810170029
-- Haris Putratama - 1408101700599
+- Haris Putratama - 140810170059
