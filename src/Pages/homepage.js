@@ -111,14 +111,14 @@ const content = value.mp.map((mp) =>
     <div key={mp.id}>
       <div className="col-md-10">
         <div className="item"><a href="Item">{mp.item}</a></div>
-        <div class="row">
-          <div class="col-md-5">
+        <div>
+          <div>
             <a>Jenis : {mp.jenis}</a>
           </div>
-          <div class="col-md-5">
+          <div>
             <a>Lokasi : {mp.daerah}</a>  
           </div>
-          <div class="col-md-5">
+          <div>
             <a>Trend : {mp.trend}</a>  
           </div>
         </div>  
@@ -132,14 +132,14 @@ return (
     <body>
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Food Finder</a>
+        <a className="navbar-brand" href="#"></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
+                <li className="nav-item">
                     <a className="nav-link" href="/">Home</a>
                 </li>
                 <li className="nav-item">
@@ -151,51 +151,46 @@ return (
 
       <div className="header">
         <h1>
-            Food Finder
+            What Food You Love?
         </h1>
-        <p id="desc">Food Finder adalah Website<b> Pencarian Makanan dan Minuman </b>Mahasiswa Teknik Informatika Unpad</p>
+        <p id="desc">Search it! Find it!</p>
 
         {/* Search Form  */}
         <form>
-          <div className="container">
             <div className="row">
-              <div className="col">
+              <div>
                 <input
                   setValue={value.item}
-                  placeholder="Nama Makanan atau Minuman"
+                  placeholder="Search Food or Drink"
                   type="text"
                   id="titleBar"
                   onChange={handleChangeItem}
                 />
               </div>
             </div>
-            <div className="grid-container">
-              <div className="row">
-                <div className="col">
-                  <input
+            <div className="lokasi">
+              <input
                     setValue={value.daerah}
-                    placeholder="Lokasi Pencarian"
+                    placeholder="Location"
                     type="text"
                     id="nameBar"
                     onChange={handleChangeDaerah}
                   />
-                </div>
-              </div>
             </div>
-          </div>
+          
 
           {/* Filter Jenis */}
-          <div className="row">
+          <div className="jenis">
             <select setValue={value.jenis} className="dropdown" id="tahun" onChange={handleChangeJenis}>
-              <option value="">Jenis</option>
-              <option value="Makanan Berat">Makanan Berat</option>
-              <option value="Makanan Ringan">Makanan Ringan</option>
-              <option value="Minuman">Minuman </option>
+              <option value="">Type</option>
+              <option value="Makanan Berat">Heavy Meal</option>
+              <option value="Makanan Ringan">Snack</option>
+              <option value="Minuman">Drink </option>
             </select>
           </div>
 
            {/* Filter Trend */}
-           <div className="row">
+          <div className="trend">
             <select setValue={value.trend} className="dropdown" id="trend" onChange={handleChangeTrend}>
               <option value="">Trend</option>
               <option value="Low">Low</option>
@@ -220,7 +215,7 @@ return (
       {/* Hasil Pencarian */}
       <div class="result">
         <h5>
-            Hasil Pencarian
+            Here it is!
         </h5>
         <div>
           {content}

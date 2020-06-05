@@ -7,16 +7,30 @@
   overflow: hidden;
 }
 
+ul li a{
+  font-family: fantasy;
+}
+ul li a:hover{
+  background-color: rgba(21, 27, 5, 0.733);
+  color: aliceblue;
+}
+
+
 .header {
   padding: 40px;
   text-align: center;
-  background: #DC143C;
-  color: white;
+  background-image: url("food2.jpg");
+  color: rgba(21, 27, 5, 0.904);
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  
 }
   
   /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 50px;
+  font-family: fantasy;
 }
 
 .judul{
@@ -49,16 +63,19 @@ a#skripsi{
 }
 
 .result{
-  color: grey;
+  color: rgba(26, 51, 31, 0.829);
+  font-variant: unset;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h5{
+
   padding: 20px;
-  margin-left: 70px;
+  margin-left: 565px;
 }
 
 footer{
-  background-color: #DC143C;
+  background-color: rgb(34, 31, 32);
   color: whitesmoke;
   padding: 20px;
   margin-top: 110px;
@@ -70,40 +87,76 @@ form{
 }
 
 input#titleBar{
-  width: 600px;
+  padding: 6px;
+  width: 500px;
+  background-color: rgba(51, 48, 43, 0.835);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-style: ridge;
+  color: aliceblue;
+  border-radius: 30px;
 }
 
 input#nameBar{
-  width: 300px;
-  margin-left: 255px;
+  padding: 6px;
+  width: 500px;
+  background-color: rgba(51, 48, 43, 0.835);
+  background-blend-mode: soft-light;
+  border-style: ridge;
+  border-radius: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 0px;
   margin-right: 0px;
+  color: aliceblue;
 }
 
-input#npmBar{
-  width: 250px;
-  margin-right: 220px;
-}
 
 .dropdown{
-  margin-top: 10px;
-  margin-inline-start: 550px;
+  padding: 2px;
+  border-style: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-inline-start: 400px;
   transform: translateY(-10px); 
-  width: 600px;
-  margin-left: 350px;
+  width: 200px;
+  background-color: rgba(35, 37, 34, 0.801);
+  margin-left: 0px;
+  margin-right: 240px;
+  color: aliceblue;
 }
 
 .row{
-  margin-top: 10px;
+  padding-left: 350px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
+.lokasi{
+  padding-left: 0px;
+  padding-right: 13px;
+}
 .button#search{
-  margin-top: 10px;
-  margin-left: 550px;
-  width: 200px;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: 125px;
+  width: 250px;
+  background-color: rgb(51, 48, 43);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
 }
 
-.grid-container{
-  grid-template-columns: auto auto;
+.jenis{
+  margin-top: 20px;
+  margin-right: 72px; 
+
+}
+
+.trend{
+    margin-right: 72px;
+}
+
+input#search{
+  background-position: 0px;
+
 }
 
 /* css login */
