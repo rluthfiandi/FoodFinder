@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:mp="http://www.foodfinder.org/ns/makanan#"
+         xmlns:id="http://www.foodfinder.org/ns/data#">
+
+
+<rdf:Description rdf:about="http://www.foodfinder.org/ns/data#001">
+    <mp:item>Piscok Meler</mp:item>
+    <mp:daerah>Jatinangor</mp:daerah>
+    <mp:trend>Medium</mp:trend>
+    <mp:jenis>Makanan Ringan</mp:jenis>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.foodfinder.org/ns/data#002">
+    <mp:item>Cireng Isi 2</mp:item>
+    <mp:daerah>Caringin</mp:daerah>
+    <mp:trend>Medium</mp:trend>
+    <mp:jenis>Makanan Ringan</mp:jenis>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.foodfinder.org/ns/data#003">
+    <mp:item>Ramen Bajuri</mp:item>
+    <mp:daerah>Sukawening</mp:daerah>
+    <mp:trend>Low</mp:trend>
+    <mp:jenis>Makanan Berat</mp:jenis>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.foodfinder.org/ns/data#004">
+    <mp:item>Coto Makassar</mp:item>
+    <mp:daerah>Hegarmanah</mp:daerah>
+    <mp:trend>High</mp:trend>
+    <mp:jenis>Makanan Berat</mp:jenis>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.foodfinder.org/ns/data#005">
+    <mp:item>Chaii Greentea</mp:item>
+    <mp:daerah>Sayang</mp:daerah>
+    <mp:trend>High</mp:trend>
+    <mp:jenis>Minuman</mp:jenis>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.foodfinder.org/ns/data#006">
+    <mp:item>Jelly Potter</mp:item>
+    <mp:daerah>Gerlam</mp:daerah>
+    <mp:trend>Low</mp:trend>
+    <mp:jenis>Minuman</mp:jenis>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.foodfinder.org/ns/data#007">
+    <mp:item>DeChick</mp:item>
+    <mp:daerah>Caringin</mp:daerah>
+    <mp:trend>High</mp:trend>
+    <mp:jenis>Makanan Berat</mp:jenis>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.foodfinder.org/ns/data#008">
+    <mp:item>MooNyoo NyuSu</mp:item>
+    <mp:daerah>Sukawerning</mp:daerah>
+    <mp:trend>Medium</mp:trend>
+    <mp:jenis>Minuman</mp:jenis>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.foodfinder.org/ns/data#009">
+    <mp:item>Surabi Jatinangor</mp:item>
+    <mp:daerah>Caringin</mp:daerah>
+    <mp:trend>High</mp:trend>
+    <mp:jenis>Makanan Ringan</mp:jenis>
+  </rdf:Description>
+
+
+</rdf:RDF>
