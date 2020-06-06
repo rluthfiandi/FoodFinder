@@ -15,14 +15,14 @@ ul li a:hover{
   color: aliceblue;
 }
 
-
 .header {
-  padding: 40px;
-  text-align: center;
-  background-image: url("food2.jpg");
-  color: rgba(21, 27, 5, 0.904);
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("food2.jpg");
+  padding : 40px;
+  text-align: center;
+  color: rgba(21, 27, 5, 0.904);
   font-weight: bold;
   
 }
@@ -64,15 +64,20 @@ a#skripsi{
 
 .result{
   color: rgba(26, 51, 31, 0.829);
+  padding: 20px;
+  text-align: center;
   font-variant: unset;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h5{
-
-  padding: 20px;
-  margin-left: 565px;
+.hasil{
+  text-align: left;
+  color: rgba(26, 51, 31, 0.829);
+  font-variant: unset;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 
 footer{
   background-color: rgb(34, 31, 32);
@@ -125,9 +130,8 @@ input#nameBar{
 }
 
 .row{
-  padding-left: 350px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .lokasi{
@@ -137,7 +141,7 @@ input#nameBar{
 .button#search{
   border-radius: 20px;
   margin-top: 5px;
-  margin-left: 125px;
+  margin-left: 41%;
   width: 250px;
   background-color: rgb(51, 48, 43);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

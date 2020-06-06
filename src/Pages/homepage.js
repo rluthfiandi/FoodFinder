@@ -107,7 +107,7 @@ const handleChangeTrend = event => {
 }
 
 const content = value.mp.map((mp) =>
-  <div className="container">
+  <div className="container hasil">
     <div key={mp.id}>
       <div className="col-md-10">
         <div className="item"><a href="Item">{mp.item}</a></div>
@@ -148,7 +148,6 @@ return (
             </ul>
         </div>
       </nav>
-
       <div className="header">
         <h1>
             What Food You Love?
@@ -157,13 +156,13 @@ return (
 
         {/* Search Form  */}
         <form>
-            <div className="row">
+            <div className="lokasi">
               <div>
                 <input
                   setValue={value.item}
                   placeholder="Search Food or Drink"
                   type="text"
-                  id="titleBar"
+                  id="nameBar"
                   onChange={handleChangeItem}
                 />
               </div>
