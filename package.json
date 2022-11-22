@@ -20,7 +20,7 @@
     "react-dropdown-button": "^1.0.11",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
